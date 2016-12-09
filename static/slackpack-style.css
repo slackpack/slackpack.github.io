@@ -1,0 +1,182 @@
+#NavBar {
+  font-size: 12pt;
+  font-family: "Open Sans Condensed",sans-serif;
+  color: #FFFFFF;
+  background-color: rgba(54,17,55,0.8);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  padding-left: 50px;
+  padding-right: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#NavRight {
+  display: inline-block;
+  float: right;
+}
+
+#NavBar a {
+  text-decoration: none;
+  padding-left: 0;
+  padding-right: 60px;
+}
+
+#introImage {
+  font-size: 90pt;
+  font-family: "Alfa Slab One";
+  background-image: url(img/slackPlaidDark.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  color: #FFFFFF;
+  text-align: center;
+
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#title {
+  margin-left: 125px;
+  margin-right: 125px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  /*background-color: rgba(0,0,0,0.1);*/
+}
+
+.subtitle {
+  margin-left: 125px;
+  margin-right: 125px;
+  font-size: 50pt;
+  font-family: "Ranga";
+  font-weight: bold;
+  /*background-color: rgba(0,0,0,0.1);*/
+}
+
+.heading {
+  font-family: "Ranga";
+  font-size: 25pt;
+  text-align: center;
+}
+
+#SectionProblem {
+  background-color: #E7A733;
+  color: #FFFFFF;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 30px;
+  padding-bottom: 80px;
+
+  border-top: solid 5px white;
+}
+
+#SectionSolution {
+  background-color: #DE1D64;
+  color: #FFFFFF;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 30px;
+  padding-bottom: 80px;
+
+  border-top: solid 5px white;
+}
+
+#Section3 {
+  background-color: #FFFFFF;
+  color: #484A4A;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 30px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+#SectionArchitecture {
+  background-color: #72CADB;
+  color: #FFFFFF;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+
+#Section5 {
+  background-color: #FFFFFF;
+  color: #484A4A;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 30px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+#SectionNLP {
+  background-color: #24927D;
+  color: #FFFFFF;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+
+#Section7 {
+  background-color: #FFFFFF;
+  color: #484A4A;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 30px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+#SectionTeam {
+  background-color: #361137;
+  color: #FFFFFF;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+
+body {
+  margin:0;
+  font-family: "Open Sans Condensed","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16pt;
+  text-align: justify;
+}
+
+body a {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+strong {
+  font-family: "Ranga";
+  font-size: 18pt;
+  font-style: normal;
+}
+
+.centered {
+  text-align: center;
+}
+
+.wordcloud {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+figure {
+  display: inline-block;
+  float: center;
+}
+
+.orange_link {
+  color: #E7A733;
+  text-decoration: none;
+}
