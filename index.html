@@ -96,11 +96,7 @@
     reply to a previous message. It does not rely on the assumption that related
     messages share similar words. This is helpful because it is not uncommon for
     users who are engaged in conversation on a single topic to interchange words
-    used for similar ideas. Additionally, we use
-    <a href="https://en.wikipedia.org/wiki/Part-of-speech_tagging" target="_blank">
-    part-of-speech tagging</a> to help determine when a message is a reply. This
-    is especially useful for short responses that carry little meaning outside
-    of the conversation context.</p>
+    used for similar ideas.</p>
     <p>We calculate concept similarity by comparing the geometric representations
     of words and sentences using <a href="https://en.wikipedia.org/wiki/Word2vec" target="_blank">
     Google's Word2Vec models</a>. We first stem the words, and then compare the
