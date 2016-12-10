@@ -42,7 +42,7 @@
     This leads to a serious case of <strong>slack anxiety</strong>. When there is all
     this useful and valuable information out there, finding the information you
     need becomes a case of finding a needle in a haystack.</p>
-    <p>Slack already provides an organizing structure for the deluge of data, channels.
+    <p>Slack already provides a structure for organizing conversations: channels.
     Every team has a number of channels where conversation is housed. The channels
     are sorted by time of message. When a user opens a channel, the most recent
     messages appear first. The user can then scroll up to find older messages.</p>
@@ -55,11 +55,11 @@
     listen to one or more public channels. The bot listens in real time to the
     conversations as they unfold. It continuously uses natural language processing
     algorithms to divide the conversation into topics and summarize these topics.
-    When the user feel overwhelmed by the deluge of information on Slack, they
-    simple queury <strong>awaybot</strong>. The user provides a command, the name
+    When users feel overwhelmed by the deluge of information on Slack, they
+    simply query <strong>awaybot</strong>. The user provides a command, the name
     of the channel, and a time duration. The bot returns a high-level summary of the topics
     that transpired during that duration. It's never been easier to get summaries
-    of the conversations you missed.</p>
+    of the conversations you missed!</p>
   </div>
 
   <div id="Section3">
@@ -72,11 +72,8 @@
     We use the <a href="https://api.slack.com/rtm" target="_blank">Slack real time messaging API</a>
     to listen to the Slack channel. We use a simple
     <a href="https://kafka.apache.org/" target="_blank">Kafka</a> producer to write this
-    information to a 3 node Kafka cluster. We originally planned to serialize
-    this data before writing to Kafka with
-    <a href="https://avro.apache.org/" target="_blank">Avro</a>. However, we found that Kafka’s
-    latest version makes serializing with Avro unnecessary. We then use a Kafka
-    consumer to store the data in a 3-node
+    information to a Kafka cluster. We then use a Kafka
+    consumer to store the data in a
     <a href="http://cassandra.apache.org/" target="_blank">Cassandra</a> cluster from which our
     NLP builds summaries for different time durations. These summaries are
     stored in SimpleDB. When the user queries the Slackbot for a summary, the
@@ -93,10 +90,9 @@
   <div id="SectionNLP">
     <p class="heading">the natural language processing (nlp)...</p>
     <p>We have successfully created a topic generator that appropriately splits
-    conversation into relevant topics based on two key ideas: implicit reply and
-    concept similarity.</p>
-    <p><a href="https://drive.google.com/open?id=0BwEDqldf45ESeUdnUzRNQ0xBN0E" target="_blank">Implicit
-    Reply</a> clusters messages based on the probability that a message is a
+    conversation into relevant topics based on two key ideas: <a href="https://drive.google.com/open?id=0BwEDqldf45ESeUdnUzRNQ0xBN0E" target="_blank">implicit reply</a>
+    and concept similarity.</p>
+    <p>Implicit Reply clusters messages based on the probability that a message is a
     reply to a previous message. It does not rely on the assumption that related
     messages share similar words. This is helpful because it is not uncommon for
     users who are engaged in conversation on a single topic to interchange words
@@ -109,7 +105,7 @@
     of words and sentences using <a href="https://en.wikipedia.org/wiki/Word2vec" target="_blank">
     Google's Word2Vec models</a>. We first stem the words, and then compare the
     distances between the message vectors. Messages closer together are closer in
-    semantic meaning. Messages farther apart are semantically, more dissimilar.</p>
+    semantic meaning. Messages farther apart are semantically more dissimilar.</p>
     <center>
     <img src="static/img/topicgenerator1_v2.png" alt="topic_generator_viz" width="700px" align="middle">
     </center>
