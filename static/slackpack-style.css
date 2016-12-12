@@ -135,6 +135,15 @@
   text-align: center;
 }
 
+#SectionNext {
+  background-color: #E7A733;
+  color: #FFFFFF;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+
 #SectionTeam {
   background-color: #361137;
   color: #FFFFFF;
