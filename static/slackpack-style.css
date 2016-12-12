@@ -151,6 +151,8 @@
   padding-right: 100px;
   padding-top: 30px;
   padding-bottom: 80px;
+
+  border-top: solid 5px white;
 }
 
 body {
