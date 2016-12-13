@@ -64,13 +64,17 @@
 
   <div id="Section3">
     <!-- <p class="heading">INSERT TITLE</p> -->
-    <img id="myImg" src="static/img/awaybotSample.png" alt="Sample" style="width:900px">
+    <img src="static/img/awaybotSample.png" alt="Sample" style="width:900px">
+    <!-- <video controls="controls" src="static/vid/awaybot.mov"></video> -->
     <!-- <img src="static/vid/awaybotpreview.gif" alt="Sample" style="width:900px"> -->
-
+    <br><br>
+    <div id="myImg" class="heading">
+      Click here to see Awaybot in action.
+    </div>
     <!-- The Modal -->
     <div id="myModal" class="modal">
       <span class="close">&times;</span>
-      <img class="modal-content" id="img01">
+      <video class="modal-content" id="img01"></video>
       <div id="caption"></div>
     </div>
 
@@ -81,14 +85,16 @@
   // Get the modal
   var modal = document.getElementById('myModal');
 
-  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  // Get the video and insert it inside the modal - use its "alt" text as a caption
   var img = document.getElementById('myImg');
   var modalImg = document.getElementById("img01");
   var captionText = document.getElementById("caption");
   img.onclick = function(){
       captionText.innerHTML = "Awaybot in action";
       modal.style.display = "block";
-      modalImg.src = "static/vid/awaybot.gif";
+      modalImg.src = "static/vid/awaybot.mp4";
+      // modalImg.controls = "controls";
+      modalImg.autoplay = "autoplay";
   }
 
   // Get the <span> element that closes the modal
