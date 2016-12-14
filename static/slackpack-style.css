@@ -135,13 +135,24 @@
   text-align: center;
 }
 
-#SectionNext {
+#SectionValidity {
   background-color: #E7A733;
   color: #FFFFFF;
   padding-left: 100px;
   padding-right: 100px;
   padding-top: 30px;
   padding-bottom: 80px;
+}
+
+#SectionNext {
+  background-color: #DE1D64;
+  color: #FFFFFF;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 30px;
+  padding-bottom: 80px;
+
+  border-top: solid 5px white;
 }
 
 #SectionTeam {
@@ -202,9 +213,11 @@ figure {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
+    background-color: #DE1D64;
+    color: #FFFFFF;
 }
 
-#myImg:hover {opacity: 0.40;}
+#myImg:hover {opacity: 0.50;}
 
 /* The Modal (background) */
 .modal {
